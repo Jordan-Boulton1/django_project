@@ -20,16 +20,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# Defines an encryption key for leaving a virtual signature.
 SECRET_KEY = 'django-insecure-3ph+tx5=1k30*r5%wsh&tgkw_oz&ee-#nr=co#6uq!v0x6zo%z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# Allows for the extended, yellow error messages to be displayed.
+DEBUG = True
 
+# Determines which host or server names the project can run on.
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
 
 # Application definition
-
+# Provides a list of applications that are enabled for this Django installation.
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
